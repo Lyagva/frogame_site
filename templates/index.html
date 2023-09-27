@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="icon" href="{{ url_for('static', filename='ico/favicon.ico')}}" type="image/x-icon">
+
+        <link href="{{ url_for('static', filename='css/index.css')}}" rel="stylesheet"/>
+        <link href="{{ url_for('static', filename='css/crt.css')}}" rel="stylesheet"/>
+
+        <title>
+            Lyagva@Frogame
+        </title>
+
+    </head>
+    <body class="crt">
+        <span id="outputField" class="glow output-field"></span>
+        <span class="blinker">&block;</span>
+        <div id="heightFiller" class="invisible"></div>
+
+        <audio id="audioSource" hidden src=""></audio>
+
+
+        <script src="{{url_for('static', filename='js/index.js')}}"></script>
+    </body>
+</html>

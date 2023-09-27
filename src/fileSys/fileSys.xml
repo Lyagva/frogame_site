@@ -1,0 +1,19 @@
+<FileSys name="lyagva@frogame">
+    <folder name="folder_1">
+        <file name="1.txt">Hello, this is a file</file>
+        <file name="super_secret_stuff.txt">Bro, you shouldn't be here. It's secret</file>
+        <file name="reaaaally_secret_stuff.secret">C'mon, get the hell out of here!!!</file>
+    </folder>
+
+    <folder name="folder_2">
+        <file name="2.txt">(☞ﾟヮﾟ)☞</file>
+    </folder>
+
+    <file name="3.txt">ಠ╭╮ಠ</file>
+    <file name="content_text.txt" content="frogameLogo.txt"/>
+
+    <file name="beacon.ogg" src="https://archive.org/download/Frogame_Website_Music/Beacon.ogg"/>
+    <file name="crash_site.ogg" src="https://archive.org/download/Frogame_Website_Music/Crash%20Site.ogg"/>
+    <file name="test.ogg" src="https://dobrian.github.io/cmp/topics/sample-recording-and-playback-with-web-audio-api/freejazz.wav"/>
+    <file name="rain.sh" app="rain">Helo, this is an app... What else are you expecting?..\n（*゜ー゜*）</file>
+</FileSys>

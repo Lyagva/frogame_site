@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'PxPlus_IBM_VGA8';
+    src: url("../woff/PxPlus_IBM_VGA8.woff") format('woff');
+}  
+
+:root {
+  --background: #000;
+  --foreground: #0f0;
+  --fontSize: 14pt;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "PxPlus_IBM_VGA8", monospace;
+    color: var(--foreground);
+    font-size: var(--fontSize);
+}
+
+
+body {
+    background: var(--background);
+    padding: 20px 20px 0px 20px;
+
+    -ms-overflow-style: none;
+}
+
+::selection {
+  color: var(--background);
+  background: var(--foreground);
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+.output-field {
+    white-space: pre-wrap;
+}
+
+.blinker {
+  opacity: 1;
+  height: 15px;
+  margin-left: -10px;
+  animation: blinker 0.9s steps(2, start) infinite, glowFlicker 10s infinite;
+
+  text-shadow:
+        0 0 10px var(--foreground),
+        0 0 15px var(--foreground),
+        0 0 20px var(--foreground);
+}
+@keyframes blinker {
+  to {
+    visibility: hidden;
+  }
+}
+
+
+.glow {
+  text-shadow:
+        0 0 10px var(--foreground), 
+        0 0 15px var(--foreground),
+        0 0 20px var(--foreground);
+
+  animation-name: glowFlicker;
+  transition-timing-function: linear;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes glowFlicker {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: .99;
+
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.8;
+	}
+}
+
+.invisible {
+    opacity: 0;
+}

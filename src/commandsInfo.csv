@@ -1,0 +1,16 @@
+COMMAND;SYNTAX;HELP;DETAILED_HELP
+help;help [command];Outputs info about given command;"Use ""help [command]"" to get detailed help about given command"
+echo;echo <message>;Prints given message to terminal;Echoes given message as new line
+cls;cls;Clears all terminal output;Removes all text from terminal
+info;info [author];Gives you info about us and our members/authors;Gives you info about us and our members/authors\n\tAuthors:\n\t\tLyagva\n
+
+ls;ls;Prints content of current directory;Prints content of current directory\n\tUse "cd" to move between them
+cd;cd <path>;Moves between directories;Moves between directories\n\tUse "ls" to get list of all directories
+cat;cat <path>;Outputs content of a given file;Outputs content of a given file
+
+audio;audio [-l -load <filename>] [-v -vol -volume <value>] [-loop <true/false>] [-info] [-play] [-pause] [-stop] [-set <value>] [-move <value>];Operates with audio sub-system;Operates with audio sub-system\n\n\t-l -load <filename>\tloads given audio file\n\t-v -vol -volume <value>\tchanges volume of audio. In range [0.0 1.0]\n\t-loop <true/false>\t defines if audio will be looped\n\t-info\tshows some information about current audio stream\n\t-play\t starts audiofile from current point\n\t-pause\tstops audio at current moment\n\t-stop\tstops audio stream (pause + move to the beginning)\n\t-why?\twhy the hell are you reading this?\n\t-set <value>\tSets playback (current) time to give value in seconds. So, "-set 66" will set playback to 6:6\n\t-move <value>\tMoves playback (current) time by given value in seconds. So, "-move 66" will set playback to 2:12 (132 sec)
+
+app;app <filename>;Starts given application file;Starts given application file. Usually, it's .sh file, but: \n\t"he can be anyone of us"\n\t\t-Spy\n\n\t<filename>\tpath to an app path
+
+skipintro;skipintro <true/false>;Skips initial intro animation;If you think intro "typing" animation is too long for you, this command is exactly for you! Type "skipintro true"
+color;color <color [0-15]>;Sets foreground(text) color by given index;Sets foreground(text) color by given index\n\tColor codes:\n\t\t0\tWHITE\n\t\t1\tRED\n\t\t2\tGREEN\n\t\t3\tYELLOW\n\t\t4\tBLUE\n\t\t5\tPURPLE\n\t\t6\tCYAN\n\t\t7\tGREY\n\t\t8\tBRIGHT GREY\n\t\t9\tBRIGHT RED\n\t\t10\tBRIGHT GREEN\n\t\t11\tBRIGHT YELLOW\n\t\t12\tBRIGHT BLUE\n\t\t13\tBRIGHT PURPLE\n\t\t14\tBRIGHT CYAN\n\t\t15\tWHITE\n\t\t16+\tSECRET
