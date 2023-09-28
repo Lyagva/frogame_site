@@ -12,8 +12,13 @@
     <file name="3.txt">ಠ╭╮ಠ</file>
     <file name="content_text.txt" content="frogameLogo.txt"/>
 
-    <file name="beacon.ogg" src="https://archive.org/download/Frogame_Website_Music/Beacon.ogg"/>
-    <file name="crash_site.ogg" src="https://archive.org/download/Frogame_Website_Music/Crash%20Site.ogg"/>
-    <file name="test.ogg" src="https://dobrian.github.io/cmp/topics/sample-recording-and-playback-with-web-audio-api/freejazz.wav"/>
+    <folder name="music">
+        <file name="beacon.ogg" src="http://lyagva.ddns.net/getFile/beacon.ogg"/>
+        <file name="crash_site.ogg" src="http://lyagva.ddns.net/getFile/crash_site.ogg"/>
+        <file name="arcade_center.ogg" src="http://lyagva.ddns.net/getFile/arcade_center.ogg"/>
+        <file name="takeoff.ogg" src="http://lyagva.ddns.net/getFile/takeoff.ogg"/>
+        <file name="black_hole.ogg" src="http://lyagva.ddns.net/getFile/black_hole.ogg"/>
+    </folder>
+
     <file name="rain.sh" app="rain">Helo, this is an app... What else are you expecting?..\n（*゜ー゜*）</file>
 </FileSys>

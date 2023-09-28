@@ -30,6 +30,7 @@ def get_prompt():
 
 @app.route("/getFile/<file>", methods=["GET", "POST"])
 def get_file(file):
+    print(file)
     return send_file(current_path + "src/fileSys/files/" + file)
 
 if __name__ == "__main__":
