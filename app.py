@@ -1,3 +1,5 @@
+#!/usr/bin/env python3.9
+
 import os
 import json
 from flask import Flask, render_template, json, request

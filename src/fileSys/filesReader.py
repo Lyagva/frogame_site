@@ -1,7 +1,11 @@
 import xml.etree.ElementTree as ET
 from src.artConverter import convertToPython
 
-tree = ET.parse("src/fileSys/fileSys.xml")
+from pathlib import Path
+current_path = str(Path(__file__).parent.resolve()) + "/../../"
+
+
+tree = ET.parse(current_path + "src/fileSys/fileSys.xml")
 root = tree.getroot()
 
 

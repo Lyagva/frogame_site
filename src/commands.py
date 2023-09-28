@@ -3,6 +3,9 @@ import math
 from src.arts import Art
 from src.fileSys.filesReader import *
 
+from pathlib import Path
+current_path = str(Path(__file__).parent.resolve()) + "/../"
+
 COMMANDS = {}
 COOKIE = ""
 CLS = False
@@ -91,7 +94,7 @@ def promptOutput(cmd, args=None, kwargs=None):
 
 
 def updateCommands():
-    with open("src/commandsInfo.csv") as csvfile:
+    with open(current_path + "src/commandsInfo.csv") as csvfile:
         reader = csv.DictReader(csvfile, delimiter=";")
         for row in reader:
             COMMANDS[row["COMMAND"]] = (row["SYNTAX"],
